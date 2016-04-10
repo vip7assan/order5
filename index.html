@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<!-- This site was created in Webflow. http://www.webflow.com-->
+<!-- Last Published: Mon Apr 04 2016 14:37:57 GMT+0000 (UTC) -->
+<html data-wf-site="56d587fe50c7138426183b80" data-wf-page="56fe715e7a6e8a4d62aeb710" lang="ar">
+<head>
+  <meta charset="utf-8">
+  <title>NewHome</title>
+  <meta property="og:title" content="NewHome">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="Webflow">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/webflow.css">
+  <link rel="stylesheet" type="text/css" href="css/hussains-wondrous-site-7f1554728ebfc968.webflow.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ["Montserrat:400,700","Varela Round:400","Exo:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic","Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic","Bitter:400,700,400italic","Inconsolata:400,400italic,700,700italic"]
+      }
+    });
+  </script>
+  <link rel="shortcut icon" type="image/x-icon" href="images/webclip-gallio.png">
+  <link rel="apple-touch-icon" href="images/ 256لـوقو veto.png">
+  <style type="text/css">
+  ul li { list-style-image: url('images/dot.png')}
+    @media screen and (min-width: 100%) {
+      .w-container {
+        max-width: 100%;
+      }
+    }
+  </style>
+      	
+
+  
+<script id="indexpage" type="text/x-handlebars-template">
+
+  <script src="./js/jQuery.2.1.js"><{{!}}/script>
+  <script type="text/javascript" src="js/webflow.js"><{{!}}/script>
+  <script type="text/javascript" src="js/modernizr.js"><{{!}}/script>
+    </div> 
+  <div id="top" class="w-section herosection home2section">
+    <div data-animation="slide" data-duration="1000" data-infinite="1" data-delay="5000" data-autoplay="1" class="w-slider home2slider">
+      <div class="w-slider-mask home2mask">
+      	{{#each offers}}
+        <div class="w-slide home2slide"><img src="{{PicOffers}}" class="home2slideimage">
+        </div>
+            	{{/each}}
+
+      </div>
+      <div class="w-slider-arrow-left"></div>
+      <div class="w-slider-arrow-right"></div>
+      <div class="w-slider-nav w-round _3slidenav"></div>
+    </div>
+  </div>
+  <div id="Who" class="w-section sectionwho section">
+    <div class="w-container con">
+      <h2 data-ix="who-section-elements-4" class="whotitle">About OROMS's Restaurant</h2>
+      <div class="w-row">
+        <div class="w-col w-col-7 center">
+          <p data-ix="who-section-elements-5" class="whoparagraph">Bellisio Foods is collaborating with OROMS® Grill &amp; Bar to bring a line of frozen single-serve entrées and multi-serve meals under the OROMS® licensed brand to the frozen food category. Bellisio Foods’ Research &amp; Development and OROMS® Culinary Team teamed up to develop the bold, southwestern flavor profiles for the new frozen food line. The frozen food category has been frozen in time. This lack of innovation has made consumers grow weary of the same flavor combinations, nutritional components and even packaging. Bellisio Foods, through its collaboration with OROMS, saw an excellent opportunity to deliver “bold” in a big way. From bold flavors to bold packaging, Fresh’s&nbsp;frozen entrees are sure to be eye-catching as well as palate-pleasing. Fresh® frozen entrees will help define the future of frozen meals and infuse a sleepy category with new energy, innovation and excitement.&nbsp;</p>
+        </div>
+        <div class="w-col w-col-5 content-column"><img width="452" src="images/Oroms.png" data-ix="who-section-elements-5" class="whoimage des">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="w-section section pic"></div>
+  <div id="findUs" class="w-section section find-us">
+    <div class="w-row _3row">
+      <div class="w-col w-col-6 w-clearfix">
+        <h2 data-ix="who-section-elements-4" class="findustext">Find Us on The Map</h2>
+        <p data-ix="who-section-elements-5" class="findusparagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+      </div>
+      <div class="w-col w-col-6 w-clearfix">
+        <div data-widget-latlng="51.511214,-0.119824" data-widget-style="roadmap" data-widget-zoom="12" data-ix="who-section-elements-5" class="w-widget w-widget-map findusmap"></div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+ 
+  
+	
+</script>
+
+
+
+<script id="navparM" type="text/x-handlebars-template">
+	
+	<a href="#" class="w-nav-link _3navlink menulink">All Menu</a>
+    <ul class="menusections">
+    {{#each typef}}
+      <li class="popuplistitem"><a id="showcata" data-val="{{FtID}}" href="#" class="w-inline-block _3navlink foodesection"><h4 class="_3navlink foodesection">{{Name}}</h4></a>
+      </li>
+	{{/each}}
+    </ul>
+	
+</script>
+
+<script id="navparhome" type="text/x-handlebars-template">
+
+        <a href="#top" class="w-nav-link _3navlink">Home</a>
+        <a href="#Who" class="w-nav-link _3navlink">About</a>
+        <a href="#findUs" class="w-nav-link _3navlink">Contact</a>
+        <a id="Allmenu" href="#" class="w-nav-link _3navlink menulink">See The Menu</a>
+
+        <div class="_3loginregister">
+        	<a href="#" data-ix="registerpopappear" class="w-inline-block circlediv">
+        		<h6 class="_3logintext">Login<br>Register</h6></a>
+        </div>
+	
+	
+	
+</script>
+
+
+<script id="allmenu" type="text/x-handlebars-template">
+
+
+  <script src="./js/jQuery.2.1.js"><{{!}}/script>
+  <script type="text/javascript" src="js/webflow.js"><{{!}}/script>
+  <script type="text/javascript" src="js/modernizr.js"><{{!}}/script>
+	
+<div data-ix="profile-div" class="profilediv">
+    <div class="profiledivinformation">
+      <h2 class="profiledivname">Welcome Hussain</h2>
+      <h3 class="profiledivamount">Your balance is:</h3>
+      <h1 class="profiledivbalance">SAR 100</h1>
+    </div>
+    <div class="cart-buttons forprofilediv"><a href="#" class="w-button demobutton gotocart">Profile</a><a href="#" class="w-button demobutton complete">Sign Out</a>
+    </div>
+  </div>
+  <div data-ix="cartdiv" class="cartdiv">
+    <div class="ordersdiv">
+      <h1 class="yourcart">Your cart is hungry</h1><img src="images/699691-icon-20-sad-face-eyebrows-512.png" class="hungryicon">
+      <ul class="w-list-unstyled w-hidden-main w-hidden-medium w-hidden-small w-hidden-tiny orderslist">
+        <li class="w-clearfix cartorderlistitem">
+          <div class="w-clearfix cartnamepricediv">
+            <h3 class="cartordername">Orignal HamBurger</h3>
+            <h3 class="cartordername quantity">Quantity: 100</h3>
+            <h3 class="cartordername cartproce">SAR 39</h3>
+          </div><img src="images/Screen Shot 2016-04-01 at 8.51.24 PM.png" class="cartorderpic">
+        </li>
+        <li class="w-clearfix cartorderlistitem">
+          <div class="w-clearfix cartnamepricediv">
+            <h3 class="cartordername">Orignal HamBurger</h3>
+            <h3 class="cartordername quantity">Quantity: 100</h3>
+            <h3 class="cartordername cartproce">SAR 39</h3>
+          </div><img src="images/Screen Shot 2016-04-01 at 8.51.24 PM.png" class="cartorderpic">
+        </li>
+        <li class="w-clearfix cartorderlistitem">
+          <div class="w-clearfix cartnamepricediv">
+            <h3 class="cartordername">Orignal HamBurger</h3>
+            <h3 class="cartordername quantity">Quantity: 100</h3>
+            <h3 class="cartordername cartproce">SAR 39</h3>
+          </div><img src="images/Screen Shot 2016-04-01 at 8.51.24 PM.png" class="cartorderpic">
+        </li>
+        <li class="w-clearfix cartorderlistitem">
+          <div class="w-clearfix cartnamepricediv">
+            <h3 class="cartordername">Orignal HamBurger</h3>
+            <h3 class="cartordername quantity">Quantity: 100</h3>
+            <h3 class="cartordername cartproce">SAR 39</h3>
+          </div><img src="images/Screen Shot 2016-04-01 at 8.51.24 PM.png" class="cartorderpic">
+        </li>
+        <li class="w-clearfix cartorderlistitem">
+          <div class="w-clearfix cartnamepricediv">
+            <h3 class="cartordername">Orignal HamBurger</h3>
+            <h3 class="cartordername quantity">Quantity: 100</h3>
+            <h3 class="cartordername cartproce">SAR 39</h3>
+          </div><img src="images/Screen Shot 2016-04-01 at 8.51.24 PM.png" class="cartorderpic">
+        </li>
+        <li class="w-clearfix cartorderlistitem">
+          <div class="w-clearfix cartnamepricediv">
+            <h3 class="cartordername">Orignal HamBurger</h3>
+            <h3 class="cartordername quantity">Quantity: 100</h3>
+            <h3 class="cartordername cartproce">SAR 39</h3>
+          </div><img src="images/Screen Shot 2016-04-01 at 8.51.24 PM.png" class="cartorderpic">
+        </li>
+        <li class="w-clearfix cartorderlistitem">
+          <div class="w-clearfix cartnamepricediv">
+            <h3 class="cartordername">Orignal HamBurger</h3>
+            <h3 class="cartordername quantity">Quantity: 100</h3>
+            <h3 class="cartordername cartproce">SAR 39</h3>
+          </div><img src="images/Screen Shot 2016-04-01 at 8.51.24 PM.png" class="cartorderpic">
+        </li>
+        <li class="w-clearfix cartorderlistitem">
+          <div class="w-clearfix cartnamepricediv">
+            <h3 class="cartordername">Orignal HamBurger</h3>
+            <h3 class="cartordername quantity">Quantity: 100</h3>
+            <h3 class="cartordername cartproce">SAR 39</h3>
+          </div><img src="images/Screen Shot 2016-04-01 at 8.51.24 PM.png" class="cartorderpic">
+        </li>
+        <li class="w-clearfix cartorderlistitem">
+          <div class="w-clearfix cartnamepricediv">
+            <h3 class="cartordername">Orignal HamBurger</h3>
+            <h3 class="cartordername quantity">Quantity: 100</h3>
+            <h3 class="cartordername cartproce">SAR 39</h3>
+          </div><img src="images/Screen Shot 2016-04-01 at 8.51.24 PM.png" class="cartorderpic">
+        </li>
+      </ul>
+    </div>
+    <div class="cart-buttons"><a href="#" class="w-button demobutton gotocart">Go To Cart</a><a href="#" class="w-button demobutton complete completeorder">Proceed&nbsp;Order</a>
+    </div>
+  </div>
+  <div data-ix="dimdiv-hide" class="dimdiv">
+    <div class="w-clearfix orderpopup">
+      <a href="#" data-ix="dimdiv-cancel" class="w-inline-block orderpop-cancel"><img src="images/cancel.png">
+      </a>
+      <div class="w-row orderpopuprow">
+        <div class="w-col w-col-4 w-clearfix">
+          <a href="#" class="w-lightbox w-inline-block popupimage"><img src="images/Screen Shot 2016-04-01 at 9.02.38 PM.png" class="popupimageinside">
+            <script type="application/json" class="w-json">
+              { "items": [{
+                "_id": "56feb7cfd0da234d7d1b30a6",
+                "cdnUrl": "https://daks2k3a4ib2z.cloudfront.net/56d587fe50c7138426183b80/56feb7cfd0da234d7d1b30a6_Screen%20Shot%202016-04-01%20at%209.02.38%20PM.png",
+                "fileName": "56feb7cfd0da234d7d1b30a6_Screen Shot 2016-04-01 at 9.02.38 PM.png",
+                "origFileName": "Screen Shot 2016-04-01 at 9.02.38 PM.png",
+                "width": 1052,
+                "height": 708,
+                "fileSize": 1308329,
+                "type": "image",
+                "url": "images/Screen Shot 2016-04-01 at 9.02.38 PM.png"
+              }] }
+            <{{!}}/script>
+          </a>
+        </div>
+        <div class="w-col w-col-5">
+          <h1 class="popup-food-name">Orginal Burger.</h1>
+          <p class="popup-food-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+        </div>
+        <div class="w-col w-col-3 w-clearfix"><a href="#" class="w-button addtocart-button">Add To Cart</a>
+          <h1 class="popup-food-price">SAR 15</h1>
+        </div>
+      </div>
+      <div class="w-row popuptoppingrow">
+        <div class="w-col w-col-6 newcol">
+          <div class="w-form">
+            <form id="email-form-2" name="email-form-2" data-name="Email Form 2" class="w-clearfix">
+              <label class="quantitylabel">Quantity:&nbsp;</label>
+              <a href="#" class="w-button plusbutton minus"></a>
+              <input id="Quantity" type="text" placeholder="55" name="Quantity" data-name="Quantity" class="w-input quantityinput">
+              <a href="#" class="w-button plusbutton plussign"></a>
+              <textarea id="field" placeholder="Special order" name="field" class="w-input specialorder"></textarea>
+            </form>
+            <div class="w-form-done">
+              <p>Thank you! Your submission has been received!</p>
+            </div>
+            <div class="w-form-fail">
+              <p>Oops! Something went wrong while submitting the form</p>
+            </div>
+          </div>
+        </div>
+        <div class="w-col w-col-6 newcol">
+          <h1 class="toppingtext">Toppings:</h1>
+          <div class="w-form">
+            <form id="email-form-3" name="email-form-3" data-name="Email Form 3" class="checkform">
+              <div class="w-checkbox chfield"><img src="images/1460059988_tomato.png" class="chckimage">
+                <input id="checkbox" type="checkbox" name="checkbox" data-name="Checkbox" class="w-checkbox-input _3checkbox">
+                <label for="checkbox" class="w-form-label checkboxlabel"></label>
+              </div>
+              <div class="w-checkbox chfield"><img src="images/1460059988_tomato.png" class="chckimage">
+                <input id="checkbox-14" type="checkbox" name="checkbox-14" data-name="Checkbox 14" class="w-checkbox-input _3checkbox">
+                <label for="checkbox-14" class="w-form-label checkboxlabel"></label>
+              </div>
+              <div class="w-checkbox chfield"><img src="images/1460059988_tomato.png" class="chckimage">
+                <input id="checkbox-13" type="checkbox" name="checkbox-13" data-name="Checkbox 13" class="w-checkbox-input _3checkbox">
+                <label for="checkbox-13" class="w-form-label checkboxlabel"></label>
+              </div>
+              <div class="w-checkbox chfield"><img src="images/1460059988_tomato.png" class="chckimage">
+                <input id="checkbox-12" type="checkbox" name="checkbox-12" data-name="Checkbox 12" class="w-checkbox-input _3checkbox">
+                <label for="checkbox-12" class="w-form-label checkboxlabel"></label>
+              </div>
+              <div class="w-checkbox chfield"><img src="images/1460059988_tomato.png" class="chckimage">
+                <input id="checkbox-11" type="checkbox" name="checkbox-11" data-name="Checkbox 11" class="w-checkbox-input _3checkbox">
+                <label for="checkbox-11" class="w-form-label checkboxlabel"></label>
+              </div>
+              <div class="w-checkbox chfield"><img src="images/1460059988_tomato.png" class="chckimage">
+                <input id="checkbox-10" type="checkbox" name="checkbox-10" data-name="Checkbox 10" class="w-checkbox-input _3checkbox">
+                <label for="checkbox-10" class="w-form-label checkboxlabel"></label>
+              </div>
+              <div class="w-checkbox chfield"><img src="images/1460059988_tomato.png" class="chckimage">
+                <input id="checkbox-9" type="checkbox" name="checkbox-9" data-name="Checkbox 9" class="w-checkbox-input _3checkbox">
+                <label for="checkbox-9" class="w-form-label checkboxlabel"></label>
+              </div>
+              <div class="w-checkbox chfield"><img src="images/1460059988_tomato.png" class="chckimage">
+                <input id="checkbox-8" type="checkbox" name="checkbox-8" data-name="Checkbox 8" class="w-checkbox-input _3checkbox">
+                <label for="checkbox-8" class="w-form-label checkboxlabel"></label>
+              </div>
+              <div class="w-checkbox chfield"><img src="images/1460059988_tomato.png" class="chckimage">
+                <input id="checkbox-7" type="checkbox" name="checkbox-7" data-name="Checkbox 7" class="w-checkbox-input _3checkbox">
+                <label for="checkbox-7" class="w-form-label checkboxlabel"></label>
+              </div>
+              <div class="w-checkbox chfield"><img src="images/bok-choy.png" class="chckimage">
+                <input id="checkbox-6" type="checkbox" name="checkbox-6" data-name="Checkbox 6" class="w-checkbox-input _3checkbox">
+                <label for="checkbox-6" class="w-form-label checkboxlabel"></label>
+              </div>
+              <div class="w-checkbox chfield"><img src="images/1460060014_onion.png" class="chckimage">
+                <input id="checkbox-5" type="checkbox" name="checkbox-5" data-name="Checkbox 5" class="w-checkbox-input _3checkbox">
+                <label for="checkbox-5" class="w-form-label checkboxlabel"></label>
+              </div>
+              <div class="w-checkbox chfield"><img src="images/mushroom.png" class="chckimage">
+                <input id="checkbox-4" type="checkbox" name="checkbox-4" data-name="Checkbox 4" class="w-checkbox-input _3checkbox">
+                <label for="checkbox-4" class="w-form-label checkboxlabel"></label>
+              </div>
+            </form>
+            <div class="w-form-done">
+              <p>Thank you! Your submission has been received!</p>
+            </div>
+            <div class="w-form-fail">
+              <p>Oops! Something went wrong while submitting the form</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!--------------------------->
+
+ 
+    <div data-collapse="medium" data-animation="default" data-duration="400" class="w-nav _3navtop">
+    <a href="profile.html" data-ix="profile-button" class="w-inline-block navtoplink"><img src="images/profile.png" class="navtopimage">
+    </a><a href="#" data-ix="cart-button" class="w-inline-block navtoplink"><h6 class="cartnotification">4</h6><img src="images/cart.png" class="navtopimage"></a>
+    <div class="w-form w-hidden-tiny formwrapper">
+      <form id="email-form" name="email-form" data-name="Email Form" class="w-clearfix searchform">
+        <a href="#" class="w-inline-block searchbutton"><img src="images/search.png">
+        </a>
+        <input id="name" type="text" placeholder="Type here" name="name" data-name="Name" class="w-input searchfield">
+      </form>
+      <div class="w-form-done">
+        <p>Thank you! Your submission has been received!</p>
+      </div>
+      <div class="w-form-fail">
+        <p>Oops! Something went wrong while submitting the form</p>
+      </div>
+    </div>
+  </div>
+  
+<div id="somemeal">
+  	
+  	
+</div>
+  
+<div id="somefood">
+	
+	
+	
+</div>	
+  
+  
+  
+</script>
+
+<script id="showm"  type="text/x-handlebars-template"> 
+	
+	  <script src="./js/jQuery.2.1.js"><{{!}}/script>
+  <script type="text/javascript" src="js/webflow.js"><{{!}}/script>
+  <script type="text/javascript" src="js/modernizr.js"><{{!}}/script>
+	
+	  <div class="w-section section">
+    <h1 class="section-title menupage">Our Fresh Burgers</h1>
+    <p class="sectionparagraph">We grind freshfgtjftthdfth chuck daily and grill to your liking. Served with 1 trimming.</p>
+  </div>
+  
+  
+  <div class="w-section adssection">
+    <div class="w-row adsectionrow">
+      <div class="w-col w-col-6 w-clearfix adsectioncol1">
+        <div data-animation="over" data-duration="500" data-infinite="1" data-delay="5000" data-autoplay="1" class="w-slider offerslider right">
+          <div class="w-slider-mask offerslidemask">
+            <div class="w-slide">
+              <a href="#" data-ix="3mealimage" class="w-inline-block offerslideimage"><img src="images/Screen Shot 2016-04-01 at 8.50.19 PM.png" class="offerslideimage">
+              </a>
+            </div>
+            <div class="w-slide">
+              <a href="#" data-ix="3mealimage" class="w-inline-block offerslideimage"><img src="images/Screen Shot 2016-04-01 at 8.50.19 PM.png" class="offerslideimage">
+              </a>
+            </div>
+            <div class="w-slide">
+              <a href="#" data-ix="3mealimage" class="w-inline-block offerslideimage"><img src="images/Screen Shot 2016-04-01 at 8.50.19 PM.png" class="offerslideimage">
+              </a>
+            </div>
+          </div>
+          <div class="w-slider-arrow-left offerslidearrow">
+            <div class="w-icon-slider-left _3arrowicon"></div>
+          </div>
+          <div class="w-slider-arrow-right offerslidearrow">
+            <div class="w-icon-slider-right _3arrowicon"></div>
+          </div>
+          <div class="w-slider-nav w-round _3slidenav leftside"></div>
+        </div>
+      </div>
+      <div class="w-col w-col-6 w-clearfix adsectioncol1">
+        <div data-animation="over" data-duration="500" data-infinite="1" data-delay="5000" data-autoplay="1" class="w-slider offerslider left">
+          <div class="w-slider-mask offerslidemask">
+            <div class="w-slide">
+              <a href="#" data-ix="3mealimage" class="w-inline-block offerslideimage"><img src="images/Screen Shot 2016-04-01 at 8.50.19 PM.png" class="offerslideimage">
+              </a>
+            </div>
+            <div class="w-slide">
+              <a href="#" data-ix="3mealimage" class="w-inline-block offerslideimage"><img src="images/Screen Shot 2016-04-01 at 8.50.19 PM.png" class="offerslideimage">
+              </a>
+            </div>
+            <div class="w-slide">
+              <a href="#" data-ix="3mealimage" class="w-inline-block offerslideimage"><img src="images/Screen Shot 2016-04-01 at 9.02.38 PM.png" class="offerslideimage">
+              </a>
+            </div>
+          </div>
+          <div class="w-slider-arrow-left offerslidearrow">
+            <div class="w-icon-slider-left _3arrowicon"></div>
+          </div>
+          <div class="w-slider-arrow-right offerslidearrow">
+            <div class="w-icon-slider-right _3arrowicon"></div>
+          </div>
+          <div class="w-slider-nav w-round _3slidenav leftside"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+	
+	</script>
+	
+	<script id="showfood"  type="text/x-handlebars-template">
+		  <script src="./js/jQuery.2.1.js"><{{!}}/script>
+  <script type="text/javascript" src="js/webflow.js"><{{!}}/script>
+  <script type="text/javascript" src="js/modernizr.js"><{{!}}/script>
+	  
+    <div class="w-section section">
+    <h1 class="section-title menupage">{{foods.0.name}}</h1>
+  
+  </div>
+    
+  <div class="w-section foodsection">
+  
+  {{#each foods}}
+    <a id="{{foodID}}"href="#" data-ix="3foodimage" class="w-inline-block fooddiv">
+      <div class="w-clearfix namepricediv">
+        <h4 class="foodname">{{name}}</h4>
+        <h5 class="pricetext">{{price}}</h5>
+      </div><img src="images/Screen Shot 2016-04-01 at 9.02.38 PM.png" class="w-preserve-3d foodimage">
+    </a>
+
+ {{/each}}
+  </div>	
+		
+	</script>
+	
+
+
+</head>
+<body class="_3body">
+	
+	
+	
+   <!------------------------------------------phone sction------------------------------------------>	
+  <div  data-collapse="all" data-animation="over-left" data-duration="400" data-contain="1" class="w-nav w-hidden-main _3navbarmoblie">
+  	
+    <div  class="w-container _3navbarmobilecontainer">
+    	
+      <nav role="navigation" class="w-nav-menu w-clearfix _3navmenumobile">
+      	<a id="home" href="#" class="w-nav-brand _3brand"><img src="images/Oroms.png" class="_3logoimage"></a>
+      	<div id="PhoneSection">	
+        <a href="#top" class="w-nav-link _3navlink">Home</a>
+        <a href="#Who" class="w-nav-link _3navlink">About</a>
+        <a href="#findUs" class="w-nav-link _3navlink">Contact</a>
+        <a id="Allmenu" href="#" class="w-nav-link _3navlink menulink">See The Menu</a>
+        
+          
+        <div class="_3loginregister">
+        	<a href="#" data-ix="registerpopappear" class="w-inline-block circlediv">
+        		<h6 class="_3logintext">Login<br>Register</h6></a>
+        </div>
+        </div>
+      
+      </nav>
+      
+      <div class="w-nav-button _3navmenubutton"><img src="images/Oroms.png" class="icon">
+      </div>
+      
+      
+    </div>
+
+  </div>
+    <!----------------------------------------/end phone section/------------------------------------------------>  
+  
+  <div data-ix="loginpop" class="loginregisterdiv">
+    <div class="w-clearfix formdiv"><a href="#" data-ix="popupdiv-hide-2" class="w-button cancelpopup">X</a>
+    </div>
+    <div class="w-row">
+      <div class="w-col w-col-6 _3col">
+        <div class="w-form">
+          <form id="wf-form-login-form" name="wf-form-login-form" data-name="login form" class="loginform">
+            <h6 class="section-title">Log In</h6>
+            <input id="email-2" type="email" placeholder="Email" name="email" data-name="email" required="required" autofocus="autofocus" class="w-input textfield login">
+            <input id="password-10" type="password" placeholder="Password" data-name="Password 10" required="required" name="password-10" class="w-input textfield login">
+            <input type="submit" value="Login" class="w-button button login">
+          </form>
+          <div class="w-form-done">
+            <p>Thank you! Your submission has been received!</p>
+          </div>
+          <div class="w-form-fail">
+            <p>Oops! Something went wrong while submitting the form</p>
+          </div>
+        </div>
+      </div>
+      <div class="w-col w-col-6 _3column">
+        <div class="registerbutton">
+          <h1 class="donthaveaccount">Don't have an account?</h1><a href="#" data-ix="donthaveaccount" class="registernow">Sign Up</a>
+        </div>
+        <div class="w-form">
+          <form id="wf-form-profile-form" name="wf-form-profile-form" data-name="profile form" class="form profile">
+            <h6 class="section-title">Sign Up Now</h6>
+            <input id="name-5" type="text" placeholder="Name" name="name-5" data-name="Name 5" required="required" autofocus="autofocus" class="w-input textfield login">
+            <input id="Phone-Number-4" type="text" placeholder="Phone Number" name="Phone-Number-4" data-name="Phone Number 4" required="required" class="w-input textfield login">
+            <input id="email-6" type="email" placeholder="Email" name="email-6" data-name="Email 6" required="required" class="w-input textfield login">
+            <input id="Password-4" type="password" placeholder="Password" name="Password" data-name="Password" required="required" class="w-input textfield login">
+            <input id="password-11" type="password" placeholder="Confirm Password" name="password-11" data-name="Password 11" required="required" class="w-input textfield login">
+            <input type="submit" value="Register" class="w-button button login register">
+          </form>
+          <div class="w-form-done">
+            <p>Thank you! Your submission has been received!</p>
+          </div>
+          <div class="w-form-fail">
+            <p>Oops! Something went wrong while submitting the form</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-section section">
+      <div class="w-form">
+        <form id="wf-form-login-form" name="wf-form-login-form" data-name="login form" class="w-clearfix codeform">
+          <input id="code-2" type="text" placeholder="Code" data-name="Code 2" required="required" name="code-2" class="w-input textfield login codefield code">
+          <input type="submit" value="Send" class="w-button button login codebutton code">
+        </form>
+        <div class="w-form-done">
+          <p>Thank you! Your submission has been received!</p>
+        </div>
+        <div class="w-form-fail">
+          <p>Oops! Something went wrong while submitting the form</p>
+        </div>
+      </div><a href="#" class="resend-code">Resend code</a>
+    </div>
+  </div>
+  
+    <!------------------------------------------tap/pc sction------------------------------------------>
+  	
+  <div  data-collapse="medium" data-animation="default" data-duration="400" class="w-nav w-hidden-medium w-hidden-small w-hidden-tiny _3navbar">
+  	<a id="home" href="#" data-ix="brandrotate" class="w-nav-brand _3brand"><img src="images/Oroms.png" class="_3logoimage"></a>
+  	<div id="PcSection">
+    <a href="#top" class="w-nav-link _3navlink">Home</a>
+    <a href="#Who" class="w-nav-link _3navlink">About</a>
+    <a href="#findUs" class="w-nav-link _3navlink">Contact</a>
+    <a id="Allmenu" href="#" class="w-nav-link _3navlink menulink">See The Menu</a>
+    <div class="_3loginregister">
+    	<a href="#" data-ix="registerpopappear" class="w-inline-block circlediv">
+    		<h6 class="_3logintext">Log In<br>Sign Up</h6>
+    		</a>
+    </div>
+    </div>
+  </div>
+  
+     <!------------------------------------------/end tap/pc sction------------------------------------------> 
+  
+  <div id="vip">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ 
+  </div> 
+
+  <script src="./js/jQuery.2.1.js"></script>
+  <script src="./js/handlebars-v4.0.5.js"></script> 
+  <script type="text/javascript" src="js/webflow.js"></script>
+  <script type="text/javascript" src="js/modernizr.js"></script>
+  <script src="js/app.js"></script>
+  <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+</body>
+</html>
