@@ -2814,7 +2814,7 @@
 	  var $navbars;
 	  var designer;
 	  var inApp = Webflow.env();
-	  var overlay = '<div class="w-nav-overlay" data-wf-ignore />';
+	 var overlay = '<div />';
 	  var namespace = '.w-nav';
 	  var buttonOpen = 'w--open';
 	  var menuOpen = 'w--nav-menu-open';
@@ -2889,8 +2889,11 @@
 	    if (designer) {
 	      removeOverlay(data);
 	      data.el.on('setting' + namespace, handler(data));
+	      
 	    } else {
-	      addOverlay(data);
+	     
+	      //hussain is 
+
 	      data.button.on('tap' + namespace, toggle(data));
 	      data.menu.on('click' + namespace, 'a', navigate(data));
 	    }

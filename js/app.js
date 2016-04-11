@@ -1,8 +1,7 @@
 
 
 (function(){
-   
- 
+
     var htmlContainer = $("#vip");
 
     checkReply = function(data) {
@@ -15,7 +14,7 @@
         }
     };
     server = {
-        url:"http://sbta.in/websites/service/",
+         url:"http://sbta.in/websites/service/",
             request: function(options) {
                 return $.post(server.url+"index.php", options).promise();
             },
@@ -25,20 +24,38 @@
 
        
        };
+       
+function loadScript(){
+	
+		    var top = $("#scripts");
+            top.html(" <script src='./js/jQuery.2.1.js'></script> "+"<script src='./js/webflow.js'></script> "
+            +"<script src='./js/ modernizr.js'></script> ");
+
+}       
         
 $usersession = {
 	
 	homes:function (){
 		
+		
+		
+
+		
 		server.request({route:{app:"offer"}}).done(function(data){
 	      
-    	 	var source   = $("#indexpage").html();
+		    var source   = $("#indexpage").html();
    			var template = Handlebars.compile(source);
    			var html    = template( data );
   			htmlContainer.html(html); 
+  			loadScript();
+  			 console.log(data);
+
+      
 	     });
 	
 	},
+	
+
 	
 	loadallfoods:function(data){
 		
@@ -57,14 +74,15 @@ $usersession = {
    			var template = Handlebars.compile(source);
    			var html    = template( data );
   			$("#somefood").html(html); 
-  			 console.log(data);
+  			
+  			 loadScript();
   			});
 		
   			
   			
   			}else{
   				
-  
+            
   			
   			//alert(data.typef.length);
   		    var source   = $("#showm").html();
@@ -81,8 +99,9 @@ $usersession = {
    			var template = Handlebars.compile(source);
    			var html    = template( data );
   			$("#somefood").append(html); 
-  				
-  			 console.log(data);}
+  			console.log(data);
+  			loadScript();
+  			 }
   				});
   				
   				
@@ -97,8 +116,6 @@ $usersession = {
 };
 
 
-
-	$usersession.homes();
 
 
 
@@ -130,17 +147,13 @@ $usersession = {
                });
            });
            
-           
+
+     $usersession.homes();
+
            
 	$("body").delegate("#home","click", function(){
 				
-					server.request({route:{app:"offer"}}).done(function(data){
-	      
-    	 	var source   = $("#indexpage").html();
-   			var template = Handlebars.compile(source);
-   			var html    = template( data );
-  			htmlContainer.html(html); 
-	     });
+ 			$usersession.homes();
 		  	var source   = $("#navparhome").html();
    			var template = Handlebars.compile(source);
    			var html    = template(  );
@@ -151,7 +164,7 @@ $usersession = {
    			var html    = template(  );
   			$("#PcSection").html(html); 
   			
-
+         
 
 
            });

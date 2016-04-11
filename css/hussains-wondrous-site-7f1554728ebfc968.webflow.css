@@ -4330,7 +4330,7 @@ html.w-mod-js *[data-ix="dropdown"] {
   ._3navbarmoblie {
     left: 0px;
     top: 0px;
-    z-index: 200000;
+    z-index: 2000;
     background-color: transparent;
   }
   ._3navbarmobilecontainer {
