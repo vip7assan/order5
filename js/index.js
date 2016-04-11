@@ -33,6 +33,13 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
+        
+           var top = $("#scripts");
+            top.html(" <script src='./js/jQuery.2.1.js'></script> "+"<script src='./js/webflow.js'></script> "
+            +"<script src='./js/ modernizr.js'></script> ");
+
+        
+        
         app.receivedEvent('deviceready');
     },
     // Update DOM on a Received Event
